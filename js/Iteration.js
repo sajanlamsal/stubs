@@ -30,10 +30,10 @@ console.log(sum)
 console.log("--------------------------------------")
 
 //some
-const hasNegetiveNumbers = [1, -2, 3, 2, 4].some(function(item) {
+const hasNegativeNumbers = [1, -2, 3, 2, 4].some(function(item) {
     return item < 0
 })
-console.log(hasNegetiveNumbers)
+console.log(hasNegativeNumbers)
 console.log("--------------------------------------")
 
 
