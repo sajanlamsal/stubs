@@ -12,6 +12,7 @@ except Exception:
 pi: float = 3.14
 # text = 'The value of pi is ' + pi      ## NO, does not work
 text: str = 'The value of pi is ' + str(pi)  # yes
+print(text)
 
 raw = r'this\t\n and that'
 # this\t\n and that without r = this #tab #newline and that
