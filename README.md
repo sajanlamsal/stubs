@@ -1,1 +1,1 @@
-# collection of stubs for various programming languages
+# collection of stubs for various stuffs
