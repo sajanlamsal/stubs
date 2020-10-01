@@ -10,6 +10,10 @@ const three = [1, 2, 3]
 const doubled = three.map(function(item) {
     return item * 2
 })
+
+const doubledArrow = three.map(item => item * 2)
+
+console.log(doubledArrow)
 console.log(doubled)
 console.log("--------------------------------------")
 
@@ -20,7 +24,6 @@ const evens = ints.filter(function(item) {
 })
 console.log(evens)
 console.log("--------------------------------------")
-
 
 //reduce
 const sum = [1, 2, 3].reduce(function(result, item) {
@@ -36,7 +39,6 @@ const hasNegativeNumbers = [1, -2, 3, 2, 4].some(function(item) {
 console.log(hasNegativeNumbers)
 console.log("--------------------------------------")
 
-
 //every
 const allPositiveNumbers = [-1, 3, 2, 4].every(function(item) {
     return item > 0
@@ -49,8 +51,7 @@ const objects = [{ id: "a" }, { id: "b" }, { id: "c" }]
 const found = objects.find(function(item) {
     return item.id === "b"
 })
-console.log(found);
-
+console.log(found)
 
 //find index
 console.log("--------------------------------------")
@@ -58,9 +59,7 @@ const objects2 = [{ id: "a" }, { id: "b" }, { id: "c" }]
 const foundIndex = objects2.findIndex(function(item) {
     return item.id === "c"
 })
-console.log(foundIndex);
-
-
+console.log(foundIndex)
 
 /*
 output
