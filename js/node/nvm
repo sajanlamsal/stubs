@@ -1,0 +1,2 @@
+# nvm use node // use default package of nvm
+$ nmv use system // switch back to system node version
