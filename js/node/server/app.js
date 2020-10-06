@@ -8,8 +8,11 @@ http.createServer(requestListener)*/
 
 const server = http.createServer((req, res) => {
     console.log(req.url, req.method, req.headers)
-    res.setHeader("Content-Type", "text/html")
-    res.write(`
+
+    if (req.url === "/") {
+
+        res.setHeader("Content-Type", "text/html")
+        res.write(`
     <html>
         <head>
             <title>Sajan</title>
@@ -19,9 +22,17 @@ const server = http.createServer((req, res) => {
         </body>
     </html>
     `)
-
-    res.end()
+        res.end()
+    } else if (req.url === "/test") {
+        handleTestResponse(req, res)
+    }
 
 })
+
+function handleTestResponse(req, res) {
+    res.statusCode = 302
+    res.setHeader("Location", "/")
+    res.end()
+}
 
 server.listen(8133)
